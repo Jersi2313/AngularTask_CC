@@ -1,0 +1,21 @@
+.nav > li > a.active {
+  border-bottom: 3px solid #24741d;
+  border-radius: 0;
+  background-color: #f2f2f2;
+  color:grey}
+
+.nav > li > a { color:#b9b9b9 }
+
+.row {
+    margin-bottom: 2rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border: 3px solid rgb(250, 250, 250);
+    border-radius: 5px;
+}
+
+.row:hover {
+  border: 3px solid green;
+}

@@ -1,0 +1,37 @@
+<div class="container" style="background-color: #f2f2f2;margin-top:5%;padding: 3%;">
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="padding-bottom: 5%;">
+    <li class="nav-item"  style="margin-right: 20px;" role="presentation">
+      <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#pills-home" role="tab"    style="font-weight: 600;"><span class="badge rounded-pill bg-light" style="margin-right: 10px;font-weight: 600;color:green">23</span>Prospecting</a>
+    </li>
+    <li class="nav-item"  style="margin-right: 20px;margin-left: 20x;" role="presentation">
+      <a class="nav-link" data-bs-toggle="tab" data-bs-target="#pills-nothing" role="tab"    style="font-weight: 200;">|</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link"  data-bs-toggle="tab" data-bs-target="#pills-profile"  role="tab"    style="font-weight: 600;"><span class="badge rounded-pill bg-light" style="margin-right: 10px;font-weight: 600;color:green">2</span>Pipeline Management</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"  tabindex="0">
+      <div class="container">
+        <div class="row" *ngFor="let p of posts;let i = index">
+          <div class="col col-1" style="text-align: center;"><img src = "assets/index.svg" alt="My Happy SVG" height="30px" width="30px"/>
+          </div>
+          <div class="col col-1" style="font-weight: 200;">|</div>
+          <div class="col" style="padding-left: 20px;"> {{p.title.rendered}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" tabindex="0">
+      <div class="container">
+        <div class="row"  *ngFor="let p of posts2;let i = index">
+          <div class="col col-1"><img src = "assets/index.svg" alt="My Happy SVG" height="30px" width="30px"/>
+          </div>
+          <div class="col col-1" style="font-weight: 200;">|</div>
+          <div class="col" style="padding-left: 20px;">{{p.title.rendered}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
